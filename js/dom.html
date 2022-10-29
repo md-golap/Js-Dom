@@ -13,9 +13,26 @@
     <main>
         <section>
             <article>
-                <h3></h3>
+                <h3 id="title-3">This is title</h3>
             </article>
         </section>
     </main>
+<button id="click" onclick="clickable()">click me</button>
+<div id="new"></div>
+    <script>
+        function clickable(){
+            const text = document.getElementById('new');
+            text.innerText="new item added";
+            text.style.marginTop = "20px";
+            text.style.color = "green"
+            document.getElementById("click").innerText="why you click me";
+        }
+        
+        // const titleChange = document.getElementById('title-3');
+        
+        
+        // titleChange.innerText = "change title";
+        // titleChange.style.background = "lightgray";
+    </script>
 </body>
 </html>
